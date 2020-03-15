@@ -1,0 +1,106 @@
+{% extends 'home/base3.html' %}
+{% load static  %}
+{% block title %}
+Homepage
+{% endblock %}
+{% block pre %}
+
+
+{% endblock %}
+{% block content %}
+
+<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+
+						<div class="row header">
+							<div class="cell">
+								DOC Information
+							</div>
+							<div class="cell">
+
+							</div>
+							<!-- <div class="cell">
+								Job Title
+							</div>
+							<div class="cell">
+								Location
+							</div> -->
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								First Name:
+							</div>
+							<div class="cell" data-title="Age">
+								{{ info.firstname }}
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Last Name:
+							</div>
+							<div class="cell" data-title="Age">
+								{{ info.lastname }}
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Adhar Number:
+							</div>
+							<div class="cell" data-title="Age">
+                               {{ info.aadharno }}
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Phone Number:
+							</div>
+							<div class="cell" data-title="Age">
+                                {{ info.phoneno }}
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell" data-title="Full Name">
+								Pincode:
+							</div>
+							<div class="cell" data-title="Age">
+                                {{info.pincode}}
+							</div>
+						</div>
+                        <div class="row">
+							<div class="cell" data-title="Full Name">
+								Degree:
+							</div>
+							<div class="cell" data-title="Age">
+                                {{info.degree}}
+							</div>
+						</div>
+v
+
+
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+<!--===============================================================================================-->
+	<script src="{% static 'table/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'table/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'table/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'table/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'table/js/main.js' %}"></script>
+</div>
+
+{% endblock %}

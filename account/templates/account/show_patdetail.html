@@ -1,0 +1,174 @@
+
+{% extends 'account/base3.html' %}
+{% load static  %}
+{% block title %}
+Homepage
+{% endblock %}
+{% block pre %}
+
+{% endblock %}
+{% block content %}
+<body>
+
+	<div class="limiter">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+
+						<div class="row header">
+							<div class="cell">
+								Patient Information
+							</div>
+							<div class="cell">
+
+							</div>
+							<!-- <div class="cell">
+								Job Title
+							</div>
+							<div class="cell">
+								Location
+							</div> -->
+						</div>
+
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								First Name:
+							</div>
+							<div class="cell col-8" data-title="Age">
+								{{infopat.first_name}}
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Last Name:
+							</div>
+							<div class="cell col-8" data-title="Age">
+								{{infopat.last_name}}<br>
+							</div>
+						</div>
+                        <div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Disease:
+							</div>
+							<div class="cell col-8 " data-title="Age">
+								{% for i in ra %}
+                                <b>{{ i.disid }}</b>,
+                                {% endfor %}
+							</div>
+						</div>
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Adhar Number:
+							</div>
+							<div class="cell col-8" data-title="Age">
+                                {{infopat.aadhar_no}}<br>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Phone Number:
+							</div>
+							<div class="cell col-8" data-title="Age">
+                                {{infopat.phone_no}}<br>
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Pincode:
+							</div>
+							<div class="cell col-8" data-title="Age">
+                                {{infopat.pincode}}
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Blood Group:
+							</div>
+							<div class="cell col-8" data-title="Age">
+                                O+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Gender:
+							</div>
+							<div class="cell col-8" data-title="Age">
+								{{infopat.gender}}
+							</div>
+						</div>
+
+
+
+					</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="limiter" style="margin-top:-223px">
+		<div class="container-table100">
+			<div class="wrap-table100">
+					<div class="table">
+
+						<div class="row header">
+							<div class="cell">
+								Patient History
+							</div>
+							<div class="cell">
+
+							</div>
+						</div>
+
+						<div class="row">
+							<div class="cell col-4" data-title="Full Name">
+								Doc Consulted:
+							</div>
+							<div class="cell col-4" data-title="Full Name">
+								Date & Time:
+							</div>
+							<div class="cell col-4" data-title="Full Name">
+								Disease:
+							</div>
+						</div>
+
+						<div class="row">
+							{% for i in ra %}
+							<div class="row" data-title="Age">
+
+                                <div class="cell"class="col-4" style="margin-left: 15px;">{{ i.aadhard }}</div>
+								<div class="cell"class="col-4" style="margin-left: -25px;">{{ i.created }}</div>
+								<div class="cell"class="col-4" style="margin-left: 155px;">{{ i.disid }}</div>
+
+							</div>
+							{% endfor %}
+
+
+
+<br><br><br>
+						</div>
+
+
+					</div>
+
+			</div>
+		</div>
+	</div>
+
+<!--===============================================================================================-->
+	<script src="{% static 'table/vendor/jquery/jquery-3.2.1.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'table/vendor/bootstrap/js/popper.js' %}"></script>
+	<script src="{% static 'table/vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'table/vendor/select2/select2.min.js' %}"></script>
+<!--===============================================================================================-->
+	<script src="{% static 'table/js/main.js' %}"></script>
+
+{% endblock %}

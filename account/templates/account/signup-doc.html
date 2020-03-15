@@ -1,0 +1,159 @@
+{% extends 'account/base.html' %}
+{% load static  %}
+{% block title %}
+Homepage
+{% endblock %}
+{% block pre %}
+<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>doctor Signup</title>
+
+    <!-- Icons font CSS-->
+    <link href="{% static 'form/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'form/vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'form/vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'form/vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'form/css/main.css' %}" rel="stylesheet" media="all">
+    <script>
+        function validateForm() {
+       var returnval = true;
+       var x = document.getElementById("form");
+       var aadhar = document.getElementById("aadhar").value;
+
+            var numbers = /^[0-9]+$/;
+            var aadhar_len = aadhar.length;
+            if(!aadhar.match(numbers))
+            {
+                alert("Aadhar no must be Digit");
+                aadhar.focus() ;
+                returnval = false;
+
+            }
+
+            if(aadhar_len!=12)
+            {
+                alert("Enter 12 Digit Aadhar number");
+                aadhar.focus() ;
+                returnval = false;
+
+            }
+
+
+       var phoneno= document.getElementById("phone_number").value;
+       var phone_len = phoneno.length;
+       if(!phoneno.match(numbers))
+            {
+               alert("Mobile no must be Digit");
+               returnval = false;
+            }
+            if(phone_len!=10)
+            {
+                alert("Enter 10 Digit Mobile No");
+                returnval = false;
+            }
+
+
+       var pass_val = document.getElementById("password").value;
+        var confirm_val = document.getElementById("confirm").value;
+        if (pass_val != confirm_val) {
+            alert("Passwords do not match.");
+            returnval = false;
+        }
+
+        if(returnval == true)
+        {
+                x.action="/account/signup_doc/";
+        }
+        else
+        {
+            x.action="patient.html";
+        }
+
+
+}
+    </script>
+{% endblock %}
+{% block content %}
+<div class="page-wrapper bg-gra-02 font-poppins" style="padding-top: 40px;">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4" style="margin-top:132px">
+                <div class="card-body" style="padding-bottom: 25px;">
+                    <h2 class="title">Doctor Signup</h2>
+                    <form method="POST" onsubmit="return validateForm()" id ="form">
+    {% csrf_token %}
+    <div class="row row-space">
+        <div class="col-6">
+            <div class="input-group">
+                <label class="label">first name</label>
+                <input class="input--style-4" type="text" name="first_name" required>
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="input-group">
+                <label class="label">last name</label>
+                <input class="input--style-4" type="text" name="last_name" required>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="input-group">
+        <label class="label">Aadhar Number</label>
+
+        {% if msg is True %}
+        <script>alert(" Aadhar card already exists ! ");</script>
+        {% endif %}
+        <input class="input--style-4" type="text" id="aadhar" name="aadhar" required>
+    </div>
+
+
+    <div>
+            <div class="input-group">
+                <label class="label">Phone Number</label>
+                <input class="input--style-4" type="text" id="phone_number" name="phone" required>
+            </div>
+    </div>
+
+
+   <div class="row row-space">
+        <div class="col-6">
+            <div class="input-group">
+                <label class="label">Password</label>
+                <input class="input--style-4" type="password" name="password" id="password" required>
+            </div>
+        </div>
+            <div class="col-6">
+            <div class="input-group">
+                <label class="label">Confirm Password</label>
+                <input class="input--style-4" type="password" name="confirm" id="confirm" required>
+            </div>
+        </div>
+    </div>
+    <div class="p-t-15">
+        <button class="btn btn--radius-2 btn--blue" type="submit">SignUp</button><br><br>
+         <a href="" style="text-decoration: none; font-size: 15px;color: black;">If You Have Already Account</a>&nbsp;<a href="{% url 'account:login_d' %}" style="text-decoration: none; font-size: 15px;color: blue">Login Here</a>
+    </div>
+</form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'form/vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static 'form/vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static 'form/vendor/datepicker/moment.min.js' %}"></script>
+    <script src="{% static 'form/vendor/datepicker/daterangepicker.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'form/js/global.js' %}"></script>
+{% endblock %}

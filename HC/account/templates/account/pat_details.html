@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Font Awesome -->
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+<!-- Google Fonts -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
+<!-- Bootstrap core CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<!-- Material Design Bootstrap -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/css/mdb.min.css" rel="stylesheet">
+<!-- JQuery -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.13.0/js/mdb.min.js"></script>
+<style>
+.card{
+    margin-top: 249px;
+    width: 365px;
+    margin-left: 620px;
+}
+</style>
+</head>
+<body>
+<div class="card">
+
+  <h5 class="card-header info-color white-text text-center py-4">
+   Patient Details
+  </h5>
+
+  <!--Card content-->
+  <div class="card-body px-lg-5 pt-0">
+
+    <!-- Form -->
+
+
+      <!-- Email -->
+
+      <!-- Password -->
+      <div class="md-form">
+          <form action="{% url 'account:show_patdetails' %}" method="post">
+              {% csrf_token %}
+              <p>Enter Patient Aadhar NO</p>
+        <input type="text" name="aadhar" id="materialLoginFormPassword" class="form-control">
+        <label for="materialLoginFormPassword"></label>
+                <br>
+              <button class="" type="submit">Show Details</button><br><br>
+          </form>
+
+      </div>
+
+
+
+
+</div>
+<!-- Material form login -->
+</body>
+</html>

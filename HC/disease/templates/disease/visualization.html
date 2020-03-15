@@ -1,0 +1,466 @@
+python {% load static %}
+<!doctype html>
+<html>
+<head>
+  	{% block pre %} {% endblock %}
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="icon" href="img/favicon.png" type="image/png">
+	<title>{% block title %} {% endblock %}</title>
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="{% static 'home/css/bootstrap.css' %}">
+	<link rel="stylesheet" href="vendors/linericon/style.css">
+	<link rel="stylesheet" href="{% static 'home/css/font-awesome.min.css' %}">
+	<link rel="stylesheet" href="vendors/owl-carousel/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendors/lightbox/simpleLightbox.css">
+	<link rel="stylesheet" href="vendors/nice-select/css/nice-select.css">
+	<link rel="stylesheet" href="vendors/animate-css/animate.css">
+	<link rel="stylesheet" href="vendors/jquery-ui/jquery-ui.css">
+	<!-- main css -->
+	<link rel="stylesheet" href="{% static 'home/css/style.css' %}">
+	<link rel="stylesheet" href="{% static 'home/css/responsive.css' %}">
+  <style>
+       #l2{
+      position:absolute;
+      opacity:{{p2}};
+    }
+        #l3{
+      position:absolute;
+      opacity:{{p3}};
+    }
+        #l4{
+      position:absolute;
+      opacity:{{p4}};
+ }
+        #l5{
+      position:absolute;
+      opacity:{{p5}};
+ }
+         #l6{
+      position:absolute;
+      opacity:{{p6}};
+ }
+         #l7{
+      position:absolute;
+      opacity:{{p7}};
+ }
+         #l8{
+      position:absolute;
+      opacity:{{p8}};
+ }
+         #l9{
+      position:absolute;
+      opacity:{{p9}};
+ }
+         #l10{
+      position:absolute;
+      opacity:{{p10}};
+ }
+         #l11{
+      position:absolute;
+      opacity:{{p11}};
+ }
+         #l12{
+      position:absolute;
+      opacity:{{p12}};
+ }
+         #l13{
+      position:absolute;
+      opacity:{{p13}};
+ }
+         #l14{
+      position:absolute;
+      opacity:{{p14}};
+ }
+         #l15{
+      position:absolute;
+      opacity:{{p15}};
+ }
+         #l16{
+      position:absolute;
+      opacity:{{p16}};
+ }
+         #l17{
+      position:absolute;
+      opacity:{{p17}};
+ }
+ #l18{
+      position:absolute;
+      opacity:{{p18}};
+ }
+ #l19{
+      position:absolute;
+      opacity:{{p19}};
+ }
+ #l20{
+      position:absolute;
+      opacity:{{p20}};
+ }#l21{
+      position:absolute;
+      opacity:{{p21}};
+ }#l22{
+      position:absolute;
+      opacity:{{p22}};
+ }
+ #l23{
+      position:absolute;
+      opacity:{{p23}};
+ }
+ #l24{
+      position:absolute;
+      opacity:{{p24}};
+ }
+ #l25{
+      position:absolute;
+      opacity:{{p25}};
+ }
+ #l26{
+      position:absolute;
+      opacity:{{p26}};
+ }
+ #l27{
+      position:absolute;
+      opacity:{{p27}};
+ }
+ #l28{
+      position:absolute;
+      opacity:{{p28}};
+ }
+ #l29{
+      position:absolute;
+      opacity:{{p29}};
+ }
+ #l30{
+      position:absolute;
+      opacity:{{p30}};
+ }
+ #l31{
+      position:absolute;
+      opacity:{{p31}};
+ }
+ #l32{
+      position:absolute;
+      opacity:{{p32}};
+ }
+ #l33{
+      position:absolute;
+      opacity:{{p33}};
+ }
+ #l34{
+      position:absolute;
+      opacity:{{p34}};
+ }
+ #l35{
+      position:absolute;
+      opacity:{{p35}};
+ }
+ #l36{
+      position:absolute;
+      opacity:{{p36}};
+ }
+ #l37{
+      position:absolute;
+      opacity:{{p37}};
+ }
+ #l38{
+      position:absolute;
+      opacity:{{p38}};
+ }
+ #l39{
+      position:absolute;
+      opacity:{{p39}};
+ }
+ #l40{
+      position:absolute;
+      opacity:{{p40}};
+ }
+ #l41{
+      position:absolute;
+      opacity:{{p41}};
+ }
+ #l42{
+      position:absolute;
+      opacity:{{p42}};
+ }
+ #l43{
+      position:absolute;
+      opacity:{{p43}};
+ }#l44{
+      position:absolute;
+      opacity:{{p44}};
+ }#l45{
+      position:absolute;
+      opacity:{{p45}};
+ }
+ #l46{
+      position:absolute;
+      opacity:{{p46}};
+ }
+ #l47{
+      position:absolute;
+      opacity:{{p47}};
+ }
+ #l48{
+      position:absolute;
+      opacity:{{p48}};
+ }
+ #l49{
+      position:absolute;
+      opacity:{{p49}};
+ }
+ #l50{
+      position:absolute;
+      opacity:{{p50}};
+ }
+ #l51{
+      position:absolute;
+      opacity:{{p51}};
+ }
+ #l52{
+      position:absolute;
+      opacity:{{p52}};
+ }#l53{
+      position:absolute;
+      opacity:{{p53}};
+ }#l54{
+      position:absolute;
+      opacity:{{p54}};
+ }#l55{
+      position:absolute;
+      opacity:{{p55}};
+ }
+ #l56{
+      position:absolute;
+      opacity:{{p56}};
+ }#l57{
+      position:absolute;
+      opacity:{{p57}};
+ }#l58{
+      position:absolute;
+      opacity:{{p58}};
+ }#l59{
+      position:absolute;
+      opacity:{{p59}};
+ }#l60{
+      position:absolute;
+      opacity:{{p60}};
+ }
+ #l61{
+      position:absolute;
+      opacity:{{p61}};
+ }
+ #l62{
+      position:absolute;
+      opacity:{{p62}};
+ }
+ #l63{
+      position:absolute;
+      opacity:{{p63}};
+ }
+ #l64{
+      position:absolute;
+      opacity:{{p64}};
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </style>
+
+
+  <meta charset="utf-8">
+  <title>Django Highcharts Example</title>
+
+
+
+
+</head>
+<body>
+	<header class="header_area">
+		<div class="main_menu">
+			<nav class="navbar navbar-expand-lg navbar-light" style="height: 121px;">
+				<div class="container">
+					<a class="navbar-brand logo_h" href="index.html">
+						<img src="{% static 'home/img/logo.png' %}" alt="">
+					</a>
+					<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+					 aria-expanded="false" aria-label="Toggle navigation">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+						<div class="row ml-0 w-100">
+							<div class="col-lg-12 pr-0">
+								<ul class="nav navbar-nav center_nav pull-right">
+									<li class="nav-item active">
+										<a class="nav-link" href="index.html">Home</a>
+									</li>
+									<li class="nav-item ">
+										<a class="nav-link" href="departments.html">Departments</a>
+									</li>
+									<li class="nav-item ">
+										<a class="nav-link" href="doctors.html">Doctors</a>
+									</li>
+									<li class="nav-item submenu dropdown">
+										<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Pages</a>
+										<ul class="dropdown-menu">
+											<li class="nav-item">
+												<a class="nav-link" href="about.html">About</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="services.html">Services</a>
+											</li>
+											<li class="nav-item">
+												<a class="nav-link" href="elements.html">Elements</a>
+											</li>
+										</ul>
+									</li>
+									<li class="nav-item">
+											<li class="nav-item">
+												<a class="nav-link" href="{% url 'account:login_d' %}">Doctor Login</a>
+											</li>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link" href="{% url 'account:login_p' %}">Patient Login</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</div>
+	</header>
+ <div class="input-group"  style="width: 75%;margin: auto;">
+                            <label class="label">select Disease :  &nbsp;</label><br>
+                                <select name="Disease" id="disease" class="input--style-4" name="disease" style="height:35px;">
+                                    {% for x in data %}
+                                    <option value="{{ x }}">{{ x }}</option>
+                                    {% endfor %}
+                                </select>
+                            </div>
+<div id="main_b" style="margin-top: 83px; margin-left: 250px;">
+<img src="{% static 'vis/Layer 2.png' %}"  id=l2>
+<img src="{% static 'vis/Layer 3 red.png' %}"  id=l3>
+<img src="{% static 'vis/Layer 4 red.png' %}"  id=l4>
+<img src="{% static 'vis/Layer 5 red.png' %}"  id=l5>
+<img src="{% static 'vis/Layer 6 red.png' %}"  id=l6>
+<img src="{% static 'vis/Layer 7 red.png' %}"  id=l7>
+<img src="{% static 'vis/Layer 8 red.png' %}"  id=l8>
+<img src="{% static 'vis/Layer 9 red.png' %}"  id=l9>
+<img src="{% static 'vis/Layer 10 red.png' %}"  id=l10>
+<img src="{% static 'vis/Layer 11 red.png' %}"  id=l11>
+<img src="{% static 'vis/Layer 12 red.png' %}"  id=l12>
+<img src="{% static 'vis/Layer 13 red.png' %}"  id=l13>
+<img src="{% static 'vis/Layer 14 red.png' %}"  id=l14>
+<img src="{% static 'vis/Layer 15 red.png' %}"  id=l15>
+<img src="{% static 'vis/Layer 16 red.png' %}"  id=l16>
+<img src="{% static 'vis/Layer 17 red.png' %}"  id=l17>
+
+<img src="{% static 'vis/Layer 18 red.png' %}"  id=l18>
+<img src="{% static 'vis/Layer 19 red.png' %}"  id=l19>
+<img src="{% static 'vis/Layer 20 red.png' %}"  id=l20>
+<img src="{% static 'vis/Layer 21 red.png' %}"  id=l21>
+<img src="{% static 'vis/Layer 22 red.png' %}"  id=l22>
+<img src="{% static 'vis/Layer 23 red.png' %}"  id=l23>
+<img src="{% static 'vis/Layer 24 red.png' %}"  id=l24>
+<img src="{% static 'vis/Layer 25 red.png' %}"  id=l25>
+<img src="{% static 'vis/Layer 26 red.png' %}"  id=l26>
+<img src="{% static 'vis/Layer 27 red.png' %}"  id=l27>
+<img src="{% static 'vis/Layer 28 red.png' %}"  id=l28>
+<img src="{% static 'vis/Layer 29 red.png' %}"  id=l29>
+<img src="{% static 'vis/Layer 30 red.png' %}"  id=l30>
+<img src="{% static 'vis/Layer 31 red.png' %}"  id=l31>
+<img src="{% static 'vis/Layer 32 red.png' %}"  id=l32>
+<img src="{% static 'vis/Layer 33 red.png' %}"  id=l33>
+<img src="{% static 'vis/Layer 34 red.png' %}"  id=l34>
+<img src="{% static 'vis/Layer 35 red.png' %}"  id=l35>
+<img src="{% static 'vis/Layer 36 red.png' %}"  id=l36>
+<img src="{% static 'vis/Layer 37 red.png' %}"  id=l37>
+<img src="{% static 'vis/Layer 38 red.png' %}"  id=l38>
+<img src="{% static 'vis/Layer 39 red.png' %}"  id=l39>
+<img src="{% static 'vis/Layer 40 red.png' %}"  id=l40>
+<img src="{% static 'vis/Layer 41 red.png' %}"  id=l41>
+<img src="{% static 'vis/Layer 42 red.png' %}"  id=l42>
+<img src="{% static 'vis/Layer 43 red.png' %}"  id=l43>
+<img src="{% static 'vis/Layer 44 red.png' %}"  id=l44>
+<img src="{% static 'vis/Layer 45 red.png' %}"  id=l45>
+<img src="{% static 'vis/Layer 46 red.png' %}"  id=l46>
+<img src="{% static 'vis/Layer 47 red.png' %}"  id=l47>
+<img src="{% static 'vis/Layer 48 red.png' %}"  id=l48>
+<img src="{% static 'vis/Layer 49 red.png' %}"  id=l49>
+<img src="{% static 'vis/Layer 50 red.png' %}"  id=l50>
+<img src="{% static 'vis/Layer 51 red.png' %}"  id=l51>
+<img src="{% static 'vis/Layer 52 red.png' %}"  id=l52>
+<img src="{% static 'vis/Layer 53 red.png' %}"  id=l53>
+<img src="{% static 'vis/Layer 54 red.png' %}"  id=l54>
+<img src="{% static 'vis/Layer 55 red.png' %}"  id=l55>
+<img src="{% static 'vis/Layer 56 red.png' %}"  id=l56>
+<img src="{% static 'vis/Layer 57 red.png' %}"  id=l57>
+<img src="{% static 'vis/Layer 58 red.png' %}"  id=l58>
+<img src="{% static 'vis/Layer 59 red.png' %}"  id=l59>
+<img src="{% static 'vis/Layer 60 red.png' %}"  id=l60>
+<img src="{% static 'vis/Layer 61 red.png' %}"  id=l61>
+<img src="{% static 'vis/Layer 62 red.png' %}"  id=l62>
+<img src="{% static 'vis/Layer 63 red.png' %}"  id=l63>
+<img src="{% static 'vis/Layer 64 red.png' %}"  id=l64>
+<img src="{% static 'vis/Layer 1 red.png' %}"  id=l1>
+
+
+<img src="{% static 'vis/hi.png' %}" style="margin-left: 49px;
+    margin-top: 358px;
+    position: absolute;" id=hi>
+  <img src="{% static 'vis/low.png' %}" style="    margin-left: 49px;
+    margin-top: 551px;
+    position: absolute;" id=low>
+<img src="{% static 'vis/barr.png' %}"  style="border-style: solid;border-color: black;" id=bar>
+</div>
+		<footer class="footer-area">
+		<div class="container" style="padding: 10px 0px">
+			<div class="row">
+				<p class="col-lg-8 col-sm-8 footer-text m-0">
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved ! <i class="fa fa-heart-o" aria-hidden="true"></i><a href="https://colorlib.com" target="_blank"></a>
+				</p>
+				<div class="col-lg-4 col-sm-12 footer-social">
+					<a href="#">
+						<i class="fa fa-facebook"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-twitter"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-instagram"></i>
+					</a>
+					<a href="#">
+						<i class="fa fa-behance"></i>
+					</a>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script src="{% static 'home/js/jquery-3.2.1.min.js' %}"></script>
+	<script src="{% static 'home/js/popper.js' %}"></script>
+	<script src="{% static 'home/s/bootstrap.min.js"' %}"></script>
+	<script src="vendors/nice-select/js/jquery.nice-select.min.js"></script>
+	<script src="vendors/isotope/isotope-min.js"></script>
+	<script src="vendors/owl-carousel/owl.carousel.min.js"></script>
+	<script src="{% static 'home/js/jquery.ajaxchimp.min.js' %}"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+	<script src="{% static 'home/js/mail-script.js' %}"></script>
+	<script src="{% static 'home/js/custom.js' %}"></script>
+</body>
+
+</html>

@@ -1,0 +1,268 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    --color:rgb(66,133,244);
+    --color:royalblue;
+    --font:'Ubuntu', sans-serif;
+}
+#nav-box{
+    position: fixed;
+    height: 110px;
+    width: 100%;
+    z-index:5;
+    transition: 0.5s;
+}
+
+#header{
+    height: 50px;
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+}
+
+#header > i{
+    position: relative;
+    padding: 5px;
+    font-size: 30px;
+    color: black;
+    border: 0px solid;
+    margin: 5px 0px 5px 15px;
+    border-radius: 50%;
+    background-color: dodgerblue;
+}
+
+#header > span{
+    position: absolute;
+    padding: 10px;
+    display: inline-block;
+    height: 50px;
+    width: auto;
+    top: -2px;
+    font-size: 25px;
+    font-family: 'Lobster', cursive;
+}
+
+#searchbar{
+    display: inline-block;
+    position: absolute;
+    height: 40px;
+    width: 300px;
+    background-color: lightgray;
+    right: 50px;
+    top: 5px;
+    border: 0px solid;
+    border-radius: 20px;
+}
+
+#searchbar > input{
+   height: 30px;
+    width: 250px;
+    border: 0px solid ;
+    border-bottom: 1px solid white;
+    margin: 5px 1px 5px 10px;
+    border-radius: 20px;
+}
+#search::placeholder { /* Chrome/Opera/Safari */
+    color: black;
+    font-family: 'Lobster', cursive;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+#searchbar > i{
+    padding: 0px 5px 5px 3px;
+    font-size: 20px;
+}
+
+#nav{
+    height: 60px;
+    width: 100%;
+    border: 0px solid;
+    background-color: var(--color);
+    box-shadow: 0px 5px 15px gray;
+}
+
+#nav div,#nav ul li{
+    display: inline-block;
+    padding: 0px 10px;
+}
+
+#nav  ul  div  li  a{
+    font-family: var(--font) ;
+    color: aliceblue;
+    font-size: 17px;
+}
+
+a,a:hover{
+    text-decoration: none;
+}
+
+.nav-lft{
+    display: inline-block;
+    margin: 10px;
+    padding: 10px !important;
+}
+
+.nav-lft{
+    letter-spacing: 1px;
+}
+
+.nav-lft li a,.nav-rgt li a{
+    padding: 10px;
+    transition: 0.5s;
+}
+
+.nav-lft li a:hover,.nav-rgt li a:hover{
+    background-color:midnightblue;
+    border-bottom: 2px solid white;
+}
+
+.nav-rgt{
+    //background-color:red;
+    padding: 10px !important;
+    margin: 10px 7px;
+    position: absolute;
+    right: 0px;
+}
+
+
+#expand{
+    position: relative;
+    display: none;
+    background-color:whitesmoke;
+    height: auto;
+    width: 200px;
+    left: 260px;
+    transition: 0.8s;
+    box-shadow: 2px 2px 15px gray;
+}
+
+#expand li{
+    position: relative;
+    text-align: center;
+    padding: 15px 10px;
+    font-size: 16px;
+    font-family: var(--font);
+    list-style: none;
+}
+
+#expand a{
+    position: relative;
+    text-decoration: none;
+     padding: 10px 10px;
+    border: 0px solid;
+}
+
+#expand li:hover{
+    background-color:skyblue;
+    color: white;
+}
+
+#footer{
+    position: fixed;
+    display: none;
+    bottom: 0px;
+    height: 50px;
+    background-color: var(--color);
+    width: 100%;
+    color: white;
+    word-spacing: 2px;
+    text-align: center;
+    letter-spacing: 2px;
+   font-family: var(--font);
+   z-index:5;
+}
+
+#footer p{
+    padding: 15px 10px;
+}
+
+#footer a{
+    color: darkblue;
+}
+
+#container{
+    position:relative;
+    top:180px;
+    width: 80%;
+    min-height: auto;
+    z-index: 1;
+    //background-color: aqua;
+    margin: auto;
+    margin-bottom:50px;
+    background-color: whitesmoke;
+    border: 0px solid;
+    border-radius: 15px;
+}
+
+#container .head{
+    font-size: 25px;
+    padding: 15px;
+    font-family:  var(--font);
+}
+
+#event-list{
+    display: inline-block;
+    //padding: 15px;
+    height: auto;
+    margin: 15px;
+    line-height: 25px;
+    width:350px;
+    background-color:lightgray;
+}
+
+#event-list ul li{
+    display: block;
+    text-align: left;
+    padding: 0px 10px;
+}
+
+#event-list img{
+    height: 250px;
+    width: 100%;
+}
+
+#info{
+    background-color: royalblue;
+    height: 150px;
+    position: relative;
+    top: 0px;
+}
+
+/*
+    CSS for search page
+*/
+#searchPage{
+    height: auto;
+    width: 100%;
+    //background-color: aqua;
+    padding: 10px;
+    text-align: center;
+}
+
+#search{
+    height: 40px;
+    width: 300px;
+    font-family: var(--font);
+    font-size: 20px;
+    border: 2px solid lightblue;
+}
+
+#searchPage input[type=text]::placeholder{
+    font-family: var(--font);
+    font-size: 20px;
+}
+
+#searchPage input[type=submit]{
+    height: 35px;
+    width: 120px;
+    border: none;
+    border-radius: 5px;
+    background-color: dodgerblue;
+    box-shadow: 0px 4px darkblue;
+    margin: 0px 12px;
+    font-size: 20px;
+    font-family: var(--font);
+
+}

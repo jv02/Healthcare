@@ -1,0 +1,64 @@
+{% extends 'account/base.html' %}
+{% load static  %}
+{% block title %}
+Homepage
+{% endblock %}
+{% block pre %}
+ <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Title Page-->
+    <title>Patient Login</title>
+
+    <!-- Icons font CSS-->
+    <link href="{% static 'form/vendor/mdi-font/css/material-design-iconic-font.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'form/vendor/font-awesome-4.7/css/font-awesome.min.css' %}" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="{% static 'form/vendor/select2/select2.min.css' %}" rel="stylesheet" media="all">
+    <link href="{% static 'form/vendor/datepicker/daterangepicker.css' %}" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="{% static 'form/css/main.css' %}" rel="stylesheet" media="all">
+{% endblock %}
+{% block content %}
+ <div class="page-wrapper bg-gra-02 p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4" >
+                <div class="card-body" style="padding: 57px 0px !important;">
+                    <h2 class="title" style="width: 75%;margin: auto;">Patient Login</h2><br>
+                    <form method="POST"  action="/account/login_pat/">
+                        {% csrf_token %}
+                            <div class="input-group" style="width: 75%;margin: auto;">
+                                <label class="label">Aadhar Number</label>
+                                <input class="input--style-4" type="text" name="aadhar">
+                            </div>
+
+                            <br>
+                            <div class="input-group"  style="width: 75%;margin: auto;">
+                                <label class="label">Password</label>
+                                <input class="input--style-4" type="Password" name="password">
+                            </div>
+                         <br>
+                        <div class="p-t-15" style="width: 75%;margin: auto;">
+                            <button class="btn btn--radius-2 btn--blue" type="submit">Login</button><br><br>
+                             <a href="" style="text-decoration: none; font-size: 15px;color: black;">Don't have Account <a href="{% url 'account:signup_p' %}" style="text-decoration: none; font-size: 15px;color: blue"">Register Here</a></a>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Jquery JS-->
+    <script src="{% static 'form/vendor/jquery/jquery.min.js' %}"></script>
+    <!-- Vendor JS-->
+    <script src="{% static 'form/vendor/select2/select2.min.js' %}"></script>
+    <script src="{% static 'form/vendor/datepicker/moment.min.js' %}"></script>
+    <script src="{% static 'form/vendor/datepicker/daterangepicker.js' %}"></script>
+
+    <!-- Main JS-->
+    <script src="{% static 'form/js/global.js' %}"></script>
+{% endblock %}
