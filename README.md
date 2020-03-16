@@ -9,10 +9,9 @@ Along with this we have also implemented spatial view of Ahemdabad city. In this
 ![image](https://user-images.githubusercontent.com/45670873/76800995-bbe42f00-67fa-11ea-886c-0e08e472bec7.png)<br>
 <br>
 <b>Basic signups of doctors and patients along with logins</b><br>
-<br>
 ![image](https://user-images.githubusercontent.com/45670873/76801005-c30b3d00-67fa-11ea-9537-b4d0c25390ee.png)<br>
 <br><b>Patient Details Page:</b><br>
 ![image](https://user-images.githubusercontent.com/45670873/76801083-f5b53580-67fa-11ea-8afc-2d305a751e6c.png)<br>
-![image](https://user-images.githubusercontent.com/45670873/76801096-fc43ad00-67fa-11ea-8d72-683cd154c6cc.png)<br>
+![image](https://user-images.githubusercontent.com/45670873/76801096-fc43ad00-67fa-11ea-8d72-683cd154c6cc.png)<br><br>
 <b>Add Patient Record:</b><br>
 ![image](https://user-images.githubusercontent.com/45670873/76801096-fc43ad00-67fa-11ea-8d72-683cd154c6cc.png)
