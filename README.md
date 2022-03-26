@@ -17,3 +17,5 @@ Along with this we have also implemented spatial view of Ahemdabad city. In this
 ![image](https://user-images.githubusercontent.com/45670873/76802158-1bdbd500-67fd-11ea-958b-14b9c83d6676.png)<br><br>
 <b>Show Patient Details<b><br>
 ![image](https://user-images.githubusercontent.com/45670873/76802195-301fd200-67fd-11ea-940e-a88c5a2eac6e.png)  
+Data Visulization on image
+![1](https://user-images.githubusercontent.com/45670873/160246561-4f9d1d01-3ddb-4232-aeb5-88477fd5ed52.png)
